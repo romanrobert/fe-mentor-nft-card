@@ -1,0 +1,188 @@
+html {
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: #0d192b;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+.card-wrapper {
+  max-width: 21.875rem;
+  height: 38.5rem;
+  max-height: 80%;
+  background-color: #14253d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 14px;
+}
+
+.card {
+  margin-top: 5%;
+}
+
+.img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.img img {
+  width: 90%;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 5%;
+  border-radius: 8px;
+  opacity: 0;
+  background: rgba(0, 255, 247, 0.5);
+  cursor: pointer;
+}
+
+.overlay img {
+  position: absolute;
+  width: 32px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.stats {
+  width: 90%;
+  margin: auto;
+  margin-top: 1.875rem;
+}
+
+.stats .stats-title {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.stats p {
+  font-weight: 300;
+  color: #8bacda;
+}
+
+.stats-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-eth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-eth img {
+  margin-right: 0.5rem;
+}
+
+.info-eth p {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+.info-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-time img {
+  margin-right: 0.5rem;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: solid 1px #2f415b;
+}
+
+.user img {
+  margin-top: 0.5rem;
+  width: 2.5rem;
+  border: solid 1px white;
+  border-radius: 50%;
+}
+
+.user p {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.txt-white {
+  cursor: pointer;
+  color: white;
+}
+
+.txt-white:hover {
+  color: #00fff7;
+}
+
+@media screen and (max-width: 380px) {
+  .card-wrapper {
+    max-width: 95%;
+    margin-left: -1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
